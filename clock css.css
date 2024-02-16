@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*--black bg pat--*/
+.one {
+    position: relative;
+    left: 40%;
+    margin-top: 50px;
+    height: 200px;
+    width: 220px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 19, 18);
+}
+
+/*--clock bg pat--*/
+.clock {
+    background-color: white;
+    height: 170px;
+    width: 180px;
+    border-radius: 60%;
+    box-shadow: 30px 10px 30px 10px rgb(39, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--up number--*/
+.clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+    display: block;
+}
+
+
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: block;
+    font-size: 20px;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.stick i {
+    position: absolute;
+    
+    
+    border-radius: 8px;
+}
+
+#hour i {
+    background-color: red;
+    width: 5px;
+   height: 38px;
+}
+
+#minet i {
+    background-color: blue;
+    width: 3px;
+    height: 40px;
+}
+
+#secend i {
+    background-color: rgb(29, 15, 15);
+    width: 2px;
+    height: 70px;
+}
+
+#hour {
+    height: 40%;
+  
+}
+
+#minet {
+    height: 50px;
+}
+
+#secend {
+    height: 70px;
+}
